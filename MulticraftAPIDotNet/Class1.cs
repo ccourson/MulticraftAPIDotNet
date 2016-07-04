@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MulticraftAPIDotNet
 {
-    public class Class1
+    public class MulticraftAPI
     {
     }
 }

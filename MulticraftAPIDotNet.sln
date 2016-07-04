@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulticraftAPIDotNet", "MulticraftAPIDotNet\MulticraftAPIDotNet.csproj", "{06DA047C-F161-4316-905C-614DF5074DB3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulticraftAPITests", "MulticraftAPITests\MulticraftAPITests.csproj", "{F0C3C521-02FA-4EA6-A2B1-BCE8CD0E517D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{06DA047C-F161-4316-905C-614DF5074DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06DA047C-F161-4316-905C-614DF5074DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06DA047C-F161-4316-905C-614DF5074DB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0C3C521-02FA-4EA6-A2B1-BCE8CD0E517D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0C3C521-02FA-4EA6-A2B1-BCE8CD0E517D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0C3C521-02FA-4EA6-A2B1-BCE8CD0E517D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0C3C521-02FA-4EA6-A2B1-BCE8CD0E517D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
