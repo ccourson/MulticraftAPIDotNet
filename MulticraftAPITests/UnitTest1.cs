@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using MulticraftAPIDotNet;
 
 namespace MulticraftAPITests
 {
@@ -9,6 +10,7 @@ namespace MulticraftAPITests
         [TestMethod]
         public void TestMethod1()
         {
+            
         }
     }
 }

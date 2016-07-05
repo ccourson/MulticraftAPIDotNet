@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulticraftAPIDotNet", "Mult
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulticraftAPITests", "MulticraftAPITests\MulticraftAPITests.csproj", "{F0C3C521-02FA-4EA6-A2B1-BCE8CD0E517D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplicationTests", "ConsoleApplicationTests\ConsoleApplicationTests.csproj", "{FC9C6061-BA5E-41B8-8CD1-CBEC6FDBC4AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F0C3C521-02FA-4EA6-A2B1-BCE8CD0E517D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0C3C521-02FA-4EA6-A2B1-BCE8CD0E517D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0C3C521-02FA-4EA6-A2B1-BCE8CD0E517D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC9C6061-BA5E-41B8-8CD1-CBEC6FDBC4AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC9C6061-BA5E-41B8-8CD1-CBEC6FDBC4AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC9C6061-BA5E-41B8-8CD1-CBEC6FDBC4AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC9C6061-BA5E-41B8-8CD1-CBEC6FDBC4AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

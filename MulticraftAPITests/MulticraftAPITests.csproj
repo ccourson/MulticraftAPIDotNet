@@ -53,6 +53,12 @@
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MulticraftAPIDotNet\MulticraftAPIDotNet.csproj">
+      <Project>{06DA047C-F161-4316-905C-614DF5074DB3}</Project>
+      <Name>MulticraftAPIDotNet</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
