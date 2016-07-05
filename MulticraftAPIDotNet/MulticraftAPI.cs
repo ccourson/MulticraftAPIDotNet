@@ -41,7 +41,7 @@ namespace MulticraftAPIDotNet
 
         private McApiResponse Send(string url, string query)
         {
-            //Console.WriteLine("Query: " + query);
+            Console.WriteLine("Query: " + query + "\n");
             
             var data = Encoding.ASCII.GetBytes(query);
 

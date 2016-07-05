@@ -38,6 +38,16 @@ namespace ConsoleApplicationTests
 
             // =====================
 
+            Console.WriteLine("\nListUsers");
+            result = api.ListUsers();
+            foreach (var item in result.data as McServers)
+                Console.WriteLine("field: {0} value: {1}", item.Key, item.Value);
+
+            Console.WriteLine("\nFindUsers");
+            result = api.FindUsers("name", "admin");
+            foreach (var item in result.data as McServers)
+                Console.WriteLine("field: {0} value: {1}", item.Key, item.Value);
+
             Console.WriteLine("\nGetUser");
             result = api.GetUser(1);
             foreach (var item in result.data as McServers)
@@ -47,6 +57,9 @@ namespace ConsoleApplicationTests
             result = api.GetCurrentUser();
             foreach (var item in result.data as McServers)
                 Console.WriteLine("field: {0} value: {1}", item.Key, item.Value);
+
+            Console.WriteLine("\nUpdateUser");
+            result = api.UpdateUser("2", "email", "test@isp.com");
         }
     }
 }

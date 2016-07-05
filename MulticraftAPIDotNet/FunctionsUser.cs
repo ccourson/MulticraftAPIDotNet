@@ -27,7 +27,7 @@ namespace MulticraftAPIDotNet
         /// <exception cref="System.Exception">Invlaid parameters</exception>
         public McApiResponse FindUsers(object field, object value)
         {
-            if ((field is string || field is Array) && (value is string || value is Array))
+            if ((field is string || field is Array) && (value is string || value is int || value is Array))
             {
                 return Call("findUsers", new Dictionary<string, string>
                 {
@@ -59,6 +59,30 @@ namespace MulticraftAPIDotNet
         public McApiResponse GetCurrentUser()
         {
             return Call("getCurrentUser", new Dictionary<string, string>());
+        }
+
+        /// <summary>
+        /// Update values of one or more fields for a user.
+        /// </summary>
+        /// <param name="id">string or int value of user id.</param>
+        /// <param name="field">string or Array of field name(s) to update.</param>
+        /// <param name="value">string, int or Array (of) value(s) to set for respective field(s).</param>
+        /// <returns>McApiResponse</returns>
+        public McApiResponse UpdateUser(object id, object field, object value)
+        {
+            if ((id is string || id is int) && (field is string || field is Array) && (value is string || value is int || value is Array))
+            {
+                return Call("updateUser", new Dictionary<string, string>
+                {
+                    { "id", id.ToString() },
+                    { "field",  new JArray(field).ToString() },
+                    { "value", new JArray(value).ToString() }
+                });
+            }
+            else
+            {
+                throw new Exception("Invlaid parameters");
+            }
         }
     }
 }
